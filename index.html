@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>网络262 · 校园服务</title>
+<style>
+  :root { --ink: #2b2b3a; --muted: #8a8a9a; --primary: #5b4fc4; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Segoe UI", -apple-system, sans-serif;
+    background: linear-gradient(160deg, #ece7fb 0%, #f8eef6 45%, #eef3fd 100%);
+    min-height: 100vh;
+    color: var(--ink);
+    padding: 46px 18px 60px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 520px; margin: 0 auto; }
+  header {
+    background: linear-gradient(120deg, #4c3fae 0%, #7a5fd0 55%, #b06fd8 100%);
+    color: #fff;
+    border-radius: 24px;
+    padding: 38px 30px;
+    margin-bottom: 28px;
+    box-shadow: 0 20px 45px -18px rgba(91, 79, 196, 0.65);
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: ""; position: absolute; right: -50px; top: -50px;
+    width: 180px; height: 180px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,.18) 0%, transparent 65%);
+  }
+  .title { font-size: 28px; font-weight: 700; letter-spacing: 1px; position: relative; z-index: 1; }
+  .subtitle { margin-top: 8px; font-size: 14px; color: rgba(255,255,255,.85); position: relative; z-index: 1; }
+  .menu { display: flex; flex-direction: column; gap: 16px; }
+  .card {
+    display: flex; align-items: center; gap: 16px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px 22px;
+    text-decoration: none;
+    color: var(--ink);
+    box-shadow: 0 14px 40px -22px rgba(60, 50, 120, 0.35);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .card:hover { transform: translateY(-3px); box-shadow: 0 20px 44px -20px rgba(91,79,196,.5); }
+  .card .icon {
+    width: 56px; height: 56px; flex: 0 0 56px;
+    border-radius: 16px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px;
+  }
+  .card .info { flex: 1; min-width: 0; }
+  .card .name { font-size: 17px; font-weight: 700; }
+  .card .desc { margin-top: 4px; font-size: 13px; color: var(--muted); }
+  .card .arrow { font-size: 24px; color: #c9c2ea; font-weight: 600; }
+  .c1 .icon { background: #f0edfb; }
+  .c2 .icon { background: #e6f3fb; }
+  .c3 .icon { background: #eafaf2; }
+  footer { text-align: center; margin-top: 30px; font-size: 12px; color: #b3aed6; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="title">📚 校园服务</div>
+      <div class="subtitle">网络262 · 常用工具入口</div>
+    </header>
+    <div class="menu">
+      <a class="card c1" href="kebiao.html">
+        <div class="icon">🗓️</div>
+        <div class="info">
+          <div class="name">网络262课程表</div>
+          <div class="desc">课程安排 · 课程明细 · 校园地图</div>
+        </div>
+        <div class="arrow">›</div>
+      </a>
+      <a class="card c2" href="bus.html">
+        <div class="icon">🚌</div>
+        <div class="info">
+          <div class="name">学校巴士购票</div>
+          <div class="desc">商之旅 · 大巴购票小程序</div>
+        </div>
+        <div class="arrow">›</div>
+      </a>
+      <a class="card c3" href="shower.html">
+        <div class="icon">🚿</div>
+        <div class="info">
+          <div class="name">沐浴二维码</div>
+          <div class="desc">洗澡预约小程序</div>
+        </div>
+        <div class="arrow">›</div>
+      </a>
+    </div>
+    <footer>© 2026 · 网络262</footer>
+  </div>
+</body>
+</html>
